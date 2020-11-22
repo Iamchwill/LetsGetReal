@@ -5,9 +5,9 @@ public class Tester {
     System.out.println(x.equals(y));
     x = new RealNumber(0.000020000001);
     System.out.println(x.equals(y));
-    x = new RealNumber(0);
+    x = new RealNumber(3.9975);
     System.out.println(x.equals(y));
-    y = new RealNumber(0);
-    System.out.println(x.equals(y));
+    y = new RealNumber(1.0045);
+    System.out.println(x.add(y));
   }
 }

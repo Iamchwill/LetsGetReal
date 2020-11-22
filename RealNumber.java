@@ -14,8 +14,8 @@ public class RealNumber{
   }
 
   public boolean equals(RealNumber other){
-    if (value == 0 || other.getValue() == 0) {
-      if (value == other.getValue()) return true;
+    if (getValue() == 0 || other.getValue() == 0) {
+      if (getValue() == other.getValue()) return true;
       return false;
     }
     else if((getValue() - other.getValue()) / ((getValue() + other.getValue())/2) <= .00001 &&
@@ -24,7 +24,8 @@ public class RealNumber{
   }
 
   public RealNumber add(RealNumber other){
-     return null;
+    RealNumber sum = new RealNumber(getValue() + other.getValue());
+    return sum;
   }
 
   public RealNumber multiply(RealNumber other){
