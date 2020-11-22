@@ -39,6 +39,7 @@ public class RealNumber{
   }
 
   public RealNumber subtract(RealNumber other){
-    return null;
+    RealNumber minus = new RealNumber(getValue() - other.getValue());
+    return minus;
   }
 }
