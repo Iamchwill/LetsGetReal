@@ -35,5 +35,6 @@ public class Tester {
     RationalNumber f = new RationalNumber(16, 256);
     System.out.println(f);
     System.out.println(f.multiply(e));
+    System.out.println(f.divide(e));
   }
 }

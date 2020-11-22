@@ -58,12 +58,11 @@ public class RationalNumber extends RealNumber{
   public RationalNumber multiply(RationalNumber other){
     RationalNumber product = new RationalNumber(numerator * other.getNumerator(),
                                                 denominator * other.getDenominator());
-    if (denominator * other.getDenominator() != 0) product.reduce();
     return product;
   }
 
   public RationalNumber divide(RationalNumber other){
-    return null;
+    return multiply(other.reciprocal());
   }
 
   public RationalNumber add(RationalNumber other){
