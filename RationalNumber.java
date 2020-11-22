@@ -2,10 +2,15 @@ public class RationalNumber extends RealNumber{
   private int numerator, denominator;
   public RationalNumber(int nume, int deno){
     super((double)nume/deno);
-    numerator = nume;
-    if (nume == 0) denominator = 1;
-    else denominator = deno;
-    if (denominator != 0) reduce();
+    if (deno == 0) {
+      denominator = 1;
+      numerator = 0;
+    }
+    else {
+      numerator = nume;
+      denominator = deno;
+    }
+    reduce();
   }
 
   public double getValue() {
@@ -53,6 +58,10 @@ public class RationalNumber extends RealNumber{
     int divide = gcd(numerator, denominator);
     numerator = numerator / divide;
     denominator = denominator / divide;
+    if (denominator < 0) {
+      numerator = -numerator;
+      denominator = -denominator;
+    }
   }
 
   public RationalNumber multiply(RationalNumber other){
