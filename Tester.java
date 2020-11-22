@@ -12,5 +12,9 @@ public class Tester {
     System.out.println(x.multiply(y));
     System.out.println(x.divide(y));
     System.out.println(x.subtract(y));
+    RationalNumber a = new RationalNumber(1,4);
+    System.out.println(a);
+    RationalNumber b = new RationalNumber(0,2000);
+    System.out.println(b);
   }
 }
