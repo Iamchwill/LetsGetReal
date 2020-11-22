@@ -5,6 +5,7 @@ public class RationalNumber extends RealNumber{
     numerator = nume;
     if (nume == 0) denominator = 1;
     else denominator = deno;
+    if (denominator != 0) reduce();
   }
 
   public double getValue() {
@@ -34,11 +35,24 @@ public class RationalNumber extends RealNumber{
   }
 
   private static int gcd(int a, int b){
-    return 0;
+    int r = -1;
+    if (a < b) {
+      r = a;
+      a = b;
+      b = r;
+    }
+    while (r != 0) {
+      r = (a % b);
+      a = b;
+      b = r;
+      }
+    return a;
   }
 
   private void reduce(){
-
+    int divide = gcd(numerator, denominator);
+    numerator = numerator / divide;
+    denominator = denominator / divide;
   }
 
   public RationalNumber multiply(RationalNumber other){

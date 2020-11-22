@@ -31,5 +31,8 @@ public class Tester {
     System.out.println(a.equals(b));
     System.out.println(c.equals(d));
     System.out.println(d.equals(e));
+    System.out.println(e);
+    RationalNumber f = new RationalNumber(16, 256);
+    System.out.println(f);
   }
 }
