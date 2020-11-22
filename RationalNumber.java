@@ -56,9 +56,8 @@ public class RationalNumber extends RealNumber{
   }
 
   public RationalNumber multiply(RationalNumber other){
-    RationalNumber product = new RationalNumber(numerator * other.getNumerator(),
-                                                denominator * other.getDenominator());
-    return product;
+    return new RationalNumber(numerator * other.getNumerator(),
+                              denominator * other.getDenominator());
   }
 
   public RationalNumber divide(RationalNumber other){
@@ -66,7 +65,9 @@ public class RationalNumber extends RealNumber{
   }
 
   public RationalNumber add(RationalNumber other){
-    return null;
+    int nume = (numerator * other.getDenominator()) + (denominator * other.getNumerator());
+    int deno = denominator * other.getDenominator();
+    return new RationalNumber(nume, deno);
   }
 
   public RationalNumber subtract(RationalNumber other){
