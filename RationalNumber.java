@@ -20,10 +20,12 @@ public class RationalNumber extends RealNumber{
   }
 
   public RationalNumber reciprocal(){
-    return null;
+    return new RationalNumber(denominator,numerator);
   }
 
   public boolean equals(RationalNumber other){
+    if (numerator == other.numerator &&
+        denominator == other.denominator) return true;
     return false;
   }
 

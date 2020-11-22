@@ -22,5 +22,14 @@ public class Tester {
     System.out.println(b.getNumerator());
     System.out.println(b.getDenominator());
     System.out.println(b.getValue());
+    System.out.println(a.reciprocal());
+    System.out.println(b.reciprocal());
+    RationalNumber c = new RationalNumber(0,5213);
+    RationalNumber d = new RationalNumber(2,42);
+    RationalNumber e = new RationalNumber(2,42);
+    System.out.println(b.equals(c));
+    System.out.println(a.equals(b));
+    System.out.println(c.equals(d));
+    System.out.println(d.equals(e));
   }
 }
