@@ -29,7 +29,8 @@ public class RealNumber{
   }
 
   public RealNumber multiply(RealNumber other){
-        return null;
+        RealNumber product = new RealNumber(getValue() * other.getValue());
+        return product;
   }
 
   public RealNumber divide(RealNumber other){

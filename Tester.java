@@ -9,5 +9,6 @@ public class Tester {
     System.out.println(x.equals(y));
     y = new RealNumber(1.0045);
     System.out.println(x.add(y));
+    System.out.println(x.multiply(y));
   }
 }
