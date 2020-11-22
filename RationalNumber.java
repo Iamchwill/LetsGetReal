@@ -71,6 +71,8 @@ public class RationalNumber extends RealNumber{
   }
 
   public RationalNumber subtract(RationalNumber other){
-    return null;
+    int nume = (numerator * other.getDenominator()) - (denominator * other.getNumerator());
+    int deno = denominator * other.getDenominator();
+    return new RationalNumber(nume, deno);
   }
 }
