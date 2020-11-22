@@ -29,12 +29,13 @@ public class RealNumber{
   }
 
   public RealNumber multiply(RealNumber other){
-        RealNumber product = new RealNumber(getValue() * other.getValue());
-        return product;
+    RealNumber product = new RealNumber(getValue() * other.getValue());
+    return product;
   }
 
   public RealNumber divide(RealNumber other){
-        return null;
+    RealNumber divide = new RealNumber(getValue() / other.getValue());
+    return divide;
   }
 
   public RealNumber subtract(RealNumber other){
