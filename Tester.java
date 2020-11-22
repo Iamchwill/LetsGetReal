@@ -16,5 +16,11 @@ public class Tester {
     System.out.println(a);
     RationalNumber b = new RationalNumber(0,2000);
     System.out.println(b);
+    System.out.println(a.getNumerator());
+    System.out.println(a.getDenominator());
+    System.out.println(a.getValue());
+    System.out.println(b.getNumerator());
+    System.out.println(b.getDenominator());
+    System.out.println(b.getValue());
   }
 }

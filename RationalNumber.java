@@ -1,22 +1,22 @@
 public class RationalNumber extends RealNumber{
   private int numerator, denominator;
   public RationalNumber(int nume, int deno){
-    super(nume/deno);
+    super((double)nume/deno);
     numerator = nume;
     if (nume == 0) denominator = 1;
     else denominator = deno;
   }
 
-  public double getValue(){
-    return 0.0;
+  public double getValue() {
+    return numerator/(double)denominator;
   }
 
   public int getNumerator(){
-    return 0;
+    return numerator;
   }
 
   public int getDenominator(){
-    return 0;
+    return denominator;
   }
 
   public RationalNumber reciprocal(){
