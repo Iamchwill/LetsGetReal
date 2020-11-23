@@ -38,5 +38,7 @@ public class Tester {
     System.out.println(f.divide(e));
     System.out.println(a.add(d));
     System.out.println(a.subtract(d));
+    RationalNumber g = new RationalNumber(351,1);
+    System.out.println(g);
   }
 }
