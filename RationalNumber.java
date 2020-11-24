@@ -1,7 +1,6 @@
-public class RationalNumber extends RealNumber{
+public class RationalNumber extends Number{
   private int numerator, denominator;
   public RationalNumber(int nume, int deno){
-    super((double)nume/deno);
     if (deno == 0) {
       denominator = 1;
       numerator = 0;
@@ -33,6 +32,10 @@ public class RationalNumber extends RealNumber{
     if (numerator == other.numerator &&
         denominator == other.denominator) return true;
     return false;
+  }
+
+  public boolean equals(RealNumber other){
+    return super.equals(other);
   }
 
   public String toString(){

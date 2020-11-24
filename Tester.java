@@ -14,7 +14,7 @@ public class Tester {
     System.out.println(x.subtract(y));
     RationalNumber a = new RationalNumber(1,4);
     System.out.println(a);
-    RationalNumber b = new RationalNumber(0,2000);
+    RationalNumber b = new RationalNumber(1,1000);
     System.out.println(b);
     System.out.println(a.getNumerator());
     System.out.println(a.getDenominator());
@@ -40,5 +40,8 @@ public class Tester {
     System.out.println(a.subtract(d));
     RationalNumber g = new RationalNumber(-53,1);
     System.out.println(g);
+    RealNumber z = new RealNumber(0.25);
+    System.out.println(z.getValue() + a.getValue());
+    System.out.println(a.equals(z));
   }
 }
