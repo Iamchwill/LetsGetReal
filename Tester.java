@@ -43,5 +43,8 @@ public class Tester {
     RealNumber z = new RealNumber(0.25);
     System.out.println(z.getValue() + a.getValue());
     System.out.println(a.equals(z));
+    System.out.println(a.compareTo(z));
+    System.out.println(a.compareTo(g));
+    System.out.println(g.compareTo(a));
   }
 }
